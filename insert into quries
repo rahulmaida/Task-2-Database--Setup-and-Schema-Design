@@ -1,0 +1,11 @@
+-- Insert a complete record
+INSERT INTO customers (customerID, name, email, phone)
+VALUES (1, 'Rahul Sharma', 'rahul@example.com', '9876543210');
+INSERT INTO customers (customerID, name, email, phone)
+VALUES (4, 'Neha Singh', 'neha@example.com', '9123456789');
+INSERT INTO customers (customerID, name, email, phone)
+VALUES (5, 'Ravi Kumar', 'ravi@example.com', NULL);
+ALTER TABLE customers
+MODIFY phone VARCHAR(25) DEFAULT 'N/A';
+INSERT INTO customers (customerID, name, email)
+VALUES (6, 'Geeta Patel', 'geeta@example.com');
