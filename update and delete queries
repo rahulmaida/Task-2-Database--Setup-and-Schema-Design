@@ -1,0 +1,15 @@
+UPDATE customers
+SET email = 'neha.new@example.com'
+WHERE customerID = 4;
+UPDATE customers
+SET name = 'Ravi Updated'
+WHERE phone IS NULL;
+UPDATE customers
+SET phone = 'N/A'
+WHERE phone IS NULL;
+DELETE FROM customers
+WHERE customerID = 6;
+DELETE FROM customers
+WHERE phone = 'N/A';
+DELETE FROM customers
+WHERE email LIKE '%@spam.com';
